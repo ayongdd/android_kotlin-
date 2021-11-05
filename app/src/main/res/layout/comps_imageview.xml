@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    第一行-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+<!--        //第一个元素-->
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="#999999"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="fitCenter"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#999"
+                android:alpha="0.5"
+                android:scaleType="fitCenter"
+                android:src="@drawable/launch_screen" />
+        </LinearLayout>
+
+        <!--        //第二个元素-->
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="#000fff"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="centerCrop"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"/>
+
+<!--            centerCrop 等比缩放，平铺满容器 最常用这个-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                android:alpha="0.8"
+                android:src="@drawable/launch_screen" />
+
+        </LinearLayout>
+
+        <!--        //第三个元素-->
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="#FF0000"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="centerInside"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:scaleType="centerInside"
+                android:src="@drawable/launch_screen"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--    第二行-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <!--        //第一个元素-->
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="#999999"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="fitStart"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#999"
+                android:scaleType="fitStart"
+                android:src="@drawable/launch_screen" />
+        </LinearLayout>
+
+        <!--        //第二个元素-->
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="#000fff"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="fitEnd"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:scaleType="fitEnd"
+                android:src="@drawable/launch_screen" />
+
+        </LinearLayout>
+
+        <!--        //第三个元素-->
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="#FF0000"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="fitXY"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/launch_screen"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--    第三行-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <!--        //第一个元素-->
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="#999999"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="matrix"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"/>
+
+            <!--          从原图左上角开始 超过部分裁切-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#999"
+                android:scaleType="matrix"
+                android:src="@drawable/launch_screen" />
+        </LinearLayout>
+
+        <!--        //第二个元素-->
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="#000fff"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="center"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"/>
+
+<!--            保持原图大小 从原图中心开始显示 超过部分裁切-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:scaleType="center"
+                android:src="@drawable/launch_screen" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</LinearLayout>

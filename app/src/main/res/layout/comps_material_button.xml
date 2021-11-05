@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--    https://github.com/material-components/material-components-android/blob/master/docs/getting-started.md-->
+<!--    引入material-components-android UI库-->
+    <com.google.android.material.button.MaterialButton
+        app:cornerRadius="20dp"
+        android:text="圆角"
+        android:textSize="18dp"
+        android:textColor="#fff000"
+        android:layout_width="150dp"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:layout_height="60dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:paddingTop="0dp"
+        android:text="圆角-描边"
+        android:textColor="#fff000"
+        app:cornerRadius="20dp"
+        app:icon="@android:drawable/star_on"
+        app:iconGravity="textStart"
+        app:iconTint="#fff000"
+        app:strokeColor="@color/colorAccent" />
+
+    <com.google.android.material.button.MaterialButton
+        app:cornerRadius="20dp"
+        android:text="圆角"
+        android:textSize="18dp"
+        android:textColor="#fff000"
+        android:layout_width="150dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:insetLeft="0dp"
+        android:insetRight="0dp"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_height="60dp"/>
+
+
+<!--    选项卡 cornerRadius只有开头和结尾的子元素才能设置  layout_weight设置等比宽度-->
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/toggle_group"
+        android:layout_height="60dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:text="tab1"
+            android:textSize="18dp"
+            android:textColor="#fff000"
+            android:id="@+id/btn1"
+            android:layout_weight="1"
+            android:layout_width="150dp"
+            app:cornerRadius="20dp"
+            android:backgroundTint="@color/cardview_dark_background"
+            android:layout_height="60dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="150dp"
+            android:layout_weight="1"
+            android:id="@+id/btn2"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/cardview_dark_background"
+            android:text="tab2"
+            android:textColor="#fff000"
+            android:textSize="18dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:text="tab3"
+            android:textSize="18dp"
+            android:layout_weight="1"
+            android:id="@+id/btn3"
+            android:textColor="#fff000"
+            android:layout_width="150dp"
+            android:backgroundTint="@color/cardview_dark_background"
+            android:layout_height="60dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:text="tab4"
+            android:textSize="18dp"
+            android:layout_weight="1"
+            android:id="@+id/btn4"
+            android:textColor="#fff000"
+            android:layout_width="150dp"
+            app:cornerRadius="20dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_height="60dp"/>
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+
+<!--    文本输出控件   android:clickable="true" 可点击-->
+    <TextView
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColor="#ff0093"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:drawableLeft="@drawable/ic_home_black_24dp"
+        android:drawableTint="@color/colorAccent"
+        android:background="@color/colorPrimaryDark"
+        android:singleLine="true"
+        android:text="是是否是否是放松放松故事梗概睡过水果瑟瑟发抖是否是否是放首发是否是否是放首发"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+</LinearLayout>

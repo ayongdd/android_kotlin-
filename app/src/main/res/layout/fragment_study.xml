@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    第一栏-->
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       <LinearLayout
+           android:orientation="horizontal"
+           android:layout_width="wrap_content"
+           android:layout_weight="1"
+           android:layout_height="wrap_content">
+           <TextView
+               android:id="@+id/xuexi"
+               android:text="学习"
+               android:textSize="20dp"
+               android:textStyle="bold"
+               android:textColor="#000"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+
+           <TextView
+               android:id="@+id/kebiao"
+               android:text="课表"
+               android:textSize="16dp"
+               android:layout_marginLeft="20dp"
+               android:textStyle="normal"
+               android:textColor="#999"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+       </LinearLayout>
+        <ImageView
+            android:src="@drawable/launch_screen"
+            android:layout_gravity="right"
+            android:scaleType="centerCrop"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+
+<!--   功能区域  CardView自带阴影组件-->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/cardview_shadow_end_color"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:layout_height="100dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:id="@+id/shoucang"
+                android:backgroundTint="#ffffff"
+                app:cornerRadius="0dp"
+                android:layout_weight="1"
+                android:text="收藏"
+                app:icon="@drawable/launch_screen"
+                app:iconGravity="textTop"
+                app:iconSize="30dp"
+                app:iconTint="@null"
+                android:textColor="#333333"
+                android:layout_height="match_parent"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                android:id="@+id/wenda"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:backgroundTint="#ffffff"
+                android:layout_weight="1"
+                android:text="问答"
+                app:cornerRadius="0dp"
+                app:icon="@drawable/launch_screen"
+                app:iconGravity="textTop"
+                app:iconSize="30dp"
+                app:iconTint="@null"
+                android:textColor="#333333"
+                android:layout_height="match_parent"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:backgroundTint="#ffffff"
+                android:layout_weight="1"
+                android:text="收藏"
+                app:icon="@drawable/launch_screen"
+                app:iconGravity="textTop"
+                app:cornerRadius="0dp"
+                app:iconSize="30dp"
+                app:iconTint="@null"
+                android:textColor="#333333"
+                android:layout_height="match_parent"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:backgroundTint="#ffffff"
+                android:layout_weight="1"
+                android:text="收藏"
+                app:icon="@drawable/launch_screen"
+                app:iconGravity="textTop"
+                app:iconSize="30dp"
+                app:cornerRadius="0dp"
+                app:iconTint="@null"
+                android:textColor="#333333"
+                android:layout_height="match_parent"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:backgroundTint="#ffffff"
+                android:layout_weight="1"
+                android:text="收藏"
+                app:cornerRadius="0dp"
+                app:icon="@drawable/launch_screen"
+                app:iconGravity="textTop"
+                app:iconSize="30dp"
+                app:iconTint="@null"
+                android:textColor="#333333"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+<!--     我的课程，我的专栏-->
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/kecheng"
+                android:text="我的课程"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/zhuanlan"
+                android:text="我的专栏"
+                android:textSize="12dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="normal"
+                android:textColor="#999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/zengjia"
+                android:text="增加课程"
+                android:textSize="12dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/cardview_dark_background"
+                android:textStyle="normal"
+                android:textColor="#999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/shanchu"
+                android:text="删除课程"
+                android:textSize="12dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/cardview_dark_background"
+                android:textStyle="normal"
+                android:textColor="#999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/gengxing"
+                android:text="更新课程"
+                android:textSize="12dp"
+                android:background="@color/cardview_dark_background"
+                android:layout_marginLeft="20dp"
+                android:textStyle="normal"
+                android:textColor="#999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+<!--    课程列表-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:layout_height="match_parent"/>
+</LinearLayout>

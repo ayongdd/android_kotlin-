@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="#f2f2f2"
+    android:gravity="bottom"
+    android:layout_height="match_parent">
+<!--    线性布局-->
+<!--    android:orientation = "vertical" 垂直方向上依次排开 父容器使用-->
+<!--    android:gravity="" 决定子控件相对该父容器的位置 父容器使用-->
+<!--    android:gravity="center" 使得子view在水平和垂直方向居中显示 父容器使用-->
+<!--    android:layout_gravity="" 决定子控件相对它的父容器的位置 -->
+<!--    android:layout_gravity="center_vertical" 如果对齐方式和orientation一致就会失效-->
+<!--    weight 按比例分配父容器剩余的空间-->
+<!--    android:layout_weight="1" 如果orientation 是水平方向的，那么子控件的layout _width可以使用weight等比分配，layout_height则不行-->
+<!--    android:layout_weight="1" 如果orientation 是垂直方向的，那么子控件的layout _height可以使用weight等比分配，layout_width则不行-->
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:backgroundTint="#00ff00" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:backgroundTint="#ff0000" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
